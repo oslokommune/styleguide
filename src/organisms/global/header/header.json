@@ -15,18 +15,57 @@
       "min-height": "500px"
     }
   },
-  "header": {
-    "title": {
-      "text": "Lorem ipsum dolor sit amet",
-      "url": "#lorem",
-      "title": "Lorem ipsum dolor sit amet"
-    },
-    "parentLink": {
-      "text": "Lorem ipsum",
-      "url": "#lorem",
-      "title": "Lorem ipsum"
-    },
-    "navbarMenu": {
+  "hasLogo": true,
+  "navbarMenuServices": {
+    "menuButton": {
+      "text": "Meny",
+      "textClose": "Meny",
+      "color": "blue-dark",
+      "modifiers": "osg-hamburger-button osg-button--outline",
+      "dataAttrs": [
+        {
+          "key": "aria-expanded",
+          "val": "false"
+        }
+      ]
     }
+  },
+  "searchBar": {
+    "devtools": {
+      "tags": ["search", "input", "searchbar"],
+      "modifiers": ["osg-searchbar--hide-field"]
+    },
+    "search_bar": {},
+    "textField": {
+      "name": "textfield",
+      "placeholder": "Lorem ipsum dolor sit amet.",
+      "id": "searchbar"
+    },
+    "button": {
+      "modifiers": "osg-button--red osg-button--circle",
+      "dataAttrs": [{ "key": "aria-label", "val": "Search" }]
+    }
+  },
+  "linkButton": {
+    "dataAttrs": [
+      {
+        "key": "id",
+        "val": "lorem_ipsum"
+      },
+      {
+        "key": "aria-label",
+        "val": "press me"
+      }
+    ],
+    "url": "#lorem",
+    "modifiers": "osg-link-button--outline osg-link-button--yellow",
+    "title": "Kontakt"
+  },
+  "link": {
+    "title": "Min side",
+    "url": "https://tjenester.oslo.kommune.no/ekstern/minside/"
+  },
+  "icon": {
+    "modifiers": "osg-u-icon-user"
   }
 }
