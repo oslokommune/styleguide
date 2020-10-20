@@ -9,7 +9,9 @@
     "build:icons:docs": "webfont \"src/assets/icons/**/*.svg\" --font-name 'OsloIcons' --formats 'woff','woff2' --font-height 512 --normalize --dest \"src/assets/fonts/\" --template \"src/atoms/icons/icon/icons.json.njk\" --dest-template \"src/globals/iconography/icons/\"",
     "commit": "cz",
     "release": "standard-version",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "storybook": "start-storybook -p 6006",
+    "build-storybook": "build-storybook"
   },
   "repository": {
     "type": "git",
@@ -18,15 +20,30 @@
   "author": "Utviklings- og kompetanseetaten - Oslo kommune <devnull@uke.oslo.kommune.no>",
   "license": "proprietary",
   "homepage": "https://github.com/oslokommune/styleguide#readme",
-  "peerDependencies": {
+  "dependencies": {
     "minireset.css": "0.0.3"
   },
   "devDependencies": {
+    "@babel/core": "^7.12.3",
     "@commitlint/cli": "^9.1.2",
     "@commitlint/config-conventional": "^9.1.2",
+    "@storybook/addon-actions": "^6.0.26",
+    "@storybook/addon-essentials": "^6.0.26",
+    "@storybook/addon-links": "^6.0.26",
+    "@storybook/addons": "^6.0.26",
+    "@storybook/html": "^6.0.26",
+    "@storybook/theming": "^6.0.26",
+    "babel-loader": "^8.1.0",
+    "css-loader": "^5.0.0",
     "cz-conventional-changelog": "^3.3.0",
     "husky": "^4.3.0",
+    "node-sass": "^4.14.1",
+    "react-is": "^16.13.1",
+    "sass-loader": "^10.0.3",
     "standard-version": "^9.0.0",
+    "style-loader": "^2.0.0",
+    "twig": "^1.15.2",
+    "twig-loader": "^0.5.5",
     "webfont": "^9.0.0"
   },
   "husky": {

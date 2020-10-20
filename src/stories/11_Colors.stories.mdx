@@ -1,0 +1,28 @@
+import { Meta } from '@storybook/addon-docs/blocks';
+
+<Meta title="Global/Colors" />
+
+# Color Palette
+
+This is the primary color palette for Oslo kommune. There are util classes for adding each color for the background or the text of an element. These classes are prefixed with `osg-u-color-bg-` and `osg-u-color-text-` followed by the colors name.
+
+<style>{`
+.docs-palette {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.docs-palette-box {
+  flex: 1;
+  max-width: calc(100% / 3);
+  min-width: calc(100% / 3);
+  padding: 20px;
+}
+`}</style>
+
+<div class="docs-palette">
+  <span class="docs-palette-box osg-u-color-bg-blue-dark osg-u-color-text-white">blue-dark</span>
+  <span class="docs-palette-box osg-u-color-bg-blue">blue</span>
+  <span class="docs-palette-box osg-u-color-bg-blue-light">blue-light</span>
+  <span class="docs-palette-box osg-u-color-bg-blue-hover osg-u-color-text-white">blue-hover</span>
+</div>

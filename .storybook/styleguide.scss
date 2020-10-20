@@ -1,0 +1,11 @@
+$osg-font-path: '../src/assets/fonts';
+@import '../src/assets/sass/common';
+
+@import '../src/atoms/icons/icon/icon';
+@import '../src/atoms/buttons/button/button';
+@import '../src/atoms/buttons/tag/tag';
+
+@import '../src/molecules/forms/input_date/input_date';
+@import '../src/molecules/navigation/pagination/pagination';
+
+
