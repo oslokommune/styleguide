@@ -1,4 +1,5 @@
 import twigButton from '../atoms/buttons/button/button.twig';
+import twigIcon from '../atoms/icons/icon/icon.twig';
 
 export default {
   title: 'Atoms/Button',
@@ -56,5 +57,19 @@ export const buttonCircle = ({ content, modifier, ariaLabel }) => (twigButton({
       { "key": "aria-label", "val": ariaLabel }
     ],
     "modifiers": "osg-button--circle osg-button--" + modifier
+  },
+}));
+
+export const buttonWithIcon = ({ content, modifier, ariaLabel }) => (twigButton({
+  "content": content + twigIcon({
+    "icon": {
+      "modifiers": "osg-icon--filter osg-u-margin-left-1"
+    }
+  }),
+  "button": {
+    "dataAttrs": [
+      { "key": "aria-label", "val": ariaLabel }
+    ],
+    "modifiers": "osg-button--" + modifier
   },
 }));
